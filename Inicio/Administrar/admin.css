@@ -1,0 +1,324 @@
+*{
+    box-sizing: border-box;
+}
+/* General */
+body{
+	background: rgb(240, 240, 240);
+}
+
+/* Header */
+header{
+	background: white;
+	box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.50);
+} 
+
+/* Pie de página */
+footer{
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: .9em;
+  padding: 18px 0px 10px 0px;
+  margin-top: 10px;
+  clear: both;
+}
+
+/* Logotipo de encabezado */
+#logo{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+/* Foto de perfil */
+#img-perfil
+{
+  display: inline-block;
+  margin: auto;
+  height: 115px;
+}
+
+/* Titulo de encabezado */
+#titulo{
+  width: 62%;
+}
+
+.padre{
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+}
+
+.centrado{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Opciones de sesión de usurio */
+#sesion{
+  padding: 30px 0px 30px 0px;
+  margin-top: auto;
+  margin-bottom: auto; 
+  font-weight: bold;
+  color: rgb(150, 150, 150);
+}
+
+#seccion-derecha, #seccion-central, #seccion-izquierda{
+  display: inline-block;
+}
+
+#showError{
+  text-align: center;
+  padding: auto;
+  vertical-align: center;
+  display: none;
+  background: red;
+  color: white;
+  height: 30px;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+/* Sección de las evaluaciones (derecha) */
+#seccion-central{
+	margin: 20px 0px 15px 0px;
+	padding: 20px 0px 20px 0px;
+ 	width: 50%;
+ 	background: white;
+ 	padding: 20px;
+}
+
+#editable{
+  display: none;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+#tag{
+  display: inline-block;
+  margin-right: 15px;
+}
+#archivo{
+  display: inline-block;
+  width: 75%;
+}
+
+#registrar, #borrar{
+  width: 49%;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+#checkbox{
+  display: block;
+  padding: 5px;
+}
+
+.editar{
+  float: right;
+  background: transparent;
+  border: none;
+  color: blue;
+}
+
+.opcion-evaluacion-1{
+  width: 100%;
+  margin: 0px auto 10px auto;
+  border-radius: 5px;
+  padding: 10px;
+  background: rgb(200, 200, 230);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.opcion-evaluacion-2{
+  width: 100%;
+  margin: 0px auto 10px auto;
+  border-radius: 5px;
+  padding: 10px;
+  background: rgb(250, 180, 75);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#sec-evaluaciones{
+  display: show;
+}
+
+
+/* SECCION EMPLEADOS */
+#sec-empleados-agregar{
+  display: none;
+}
+#sec-empleados-consultar{
+  display: none;
+}
+
+/* Seccion para editar el empleado seleccionado */
+#sec-empleados-edit{
+  display: none;
+  margin-bottom: 10px;
+}
+
+#formu{
+  display: inline-block;
+  width: 75%;
+}
+
+#id_emp, #selec-proceso, #nom_emp, #ape_emp{
+    display: inline-block;
+}
+
+#id_emp{
+  width: 90%;
+  margin-right: 
+}
+
+#foto_emp{
+  width: 90%;
+}
+
+#editar_emp{
+    margin-top: 10px;
+}
+
+#selec-proceso{
+  width: 90%;
+}
+
+.bloque-form
+{
+  display: inline-block;
+  width: 48%;
+}
+
+#nombreEmpleado, #codigoEmpleado, #puestoEmpleado{
+    display: inline-block;
+    margin: 0px;
+    vertical-align: top;
+}
+
+.empleado-2{
+  width: 100%;
+  margin: 0px auto 10px auto;
+  border-radius: 5px;
+  padding: 10px;
+  background: white;
+  font-size: 1.1em;
+}
+
+.empleado-1
+{
+  width: 100%;
+  margin: 0px auto 10px auto;
+  border-radius: 5px;
+  padding: 10px;
+  background: rgb(186, 207, 239);
+  font-size: 1.1em;
+}
+
+#nombreEmpleado{
+    width: 60%;
+}
+
+#codigoEmpleado{
+    width: 30%;
+}
+
+#codigoUsr{
+  width: 34%;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+#editable{
+    display: hide;
+}
+
+#nombreUsr{
+  width: 65%;
+  margin: auto;
+  display: inline-block;
+}
+
+#apellidosUsr{
+  width: 65%;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+#select-proceso{
+  width: 34%;
+  display: inline-block;
+}
+
+/* SECCIÓN IZQUIERDA */
+.secciones-laterales
+{
+    margin: 20px 10px 0px 10px;
+    width: 23%;
+    height: 30%;
+    text-align: justify;  
+}
+
+.menu{
+ 	padding: 20px;
+    background: white;
+    text-align: justify;  
+ 	background: white;
+}
+
+/* Para definir y ordenar las opciones */
+.opcion-menu{
+	width: 80%;
+    align-items: center;
+    display: flex;
+	margin: 20px auto 10px auto;
+}
+
+/* El boton para el menú de la derecha */
+.boton{
+    border: none;
+	width:  45px;
+	height: 45px;
+    border-radius: 15px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+/* Texto que está al lado del botón */
+.opcion-boton{
+	display: inline-block;
+}
+
+@media only screen and (max-width: 1000px) {
+	 #img-perfil{
+        display: none;
+    }
+
+    #logo{
+      display: none;
+    }
+
+    #seccion-central{
+    	float: none;
+    	width: 80%;
+    	margin: 20px auto 20px auto;
+    }
+
+    #contenido
+    {
+    	width: 100%;
+    }
+
+    .secciones-laterales
+    {
+    	display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #seccion-central{
+      float: none;
+      width: 90%;
+    }
+}

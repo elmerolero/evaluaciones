@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* General */
+body{
+    background: rgb(240, 240, 240);
+}
+
+/* Header */
+header{
+    background: white;
+    box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.50);
+    width: 100%;
+} 
+
+/* Pie de página */
+footer{
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: .9em;
+  padding: 18px 0px 10px 0px;
+  bottom: 0;
+  width: 100%;
+}
+
+.centrado{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Logotipo de encabezado */
+#logo{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* Titulo de encabezado */
+#titulo{
+    width: 60%;
+}
+
+/* Opciones de sesión de usurio */
+#sesion{
+    padding: 20px 0px 20px 0px;
+    margin-top: auto;
+    margin-bottom: auto; 
+    font-weight: bold;
+    color: rgb(150, 150, 150);
+}
+
+/* Foto de perfil */
+#img-perfil
+{
+    display: inline-block;
+    margin: auto;
+    height: 115px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+#contenedor{
+    width: 80%;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    margin: auto;
+}
+
+#empleados{
+    text-align: center;
+}
+
+/* SECCION SELECCION DE EVALUADOS */
+#seleccionEvaluados{
+    height: 100%;
+    display: none;
+}
+
+#evaluador, #evaluados{
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+
+#div-fijo{
+    position: fixed;
+    width: 37%;
+    padding-bottom: 15px;
+}
+
+#div-relativo{
+    position: relative;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+#credencialEvaluador{
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+#botones{
+    width: 90%;
+    margin: auto;
+}
+
+#boton-enviar{
+    color: white;
+    background: blue;
+}
+
+#boton-regresar, #boton-enviar{
+    display: inline-block;
+    width: 49%;
+}
+
+#evaluados{
+    border-left: 1px black solid;
+    width: 50%;
+    height: 100%;
+}
+
+
+#imgEvaluador{
+    width: 25%;
+    margin-right: 10px;
+}
+
+#datosEvaluador{
+    display: inline-flex;
+    width: 60%;
+}
+
+#imgEvaluador, #datosEvaluador{
+    display: inline-block;
+}
+
+.empleadoEvaluado{
+    border: 1px black solid;
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px;
+    margin: 0px auto 15px 5.3%;
+}
+
+.datosEvaluado{
+    display: inline-block;
+    width: 75%;
+}
+
+.check-eval{
+    width: 5%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+/* BOTONES */
+.Empleado1{
+    padding: 0px;
+    width: 150px;
+    height: 205px;
+    margin: 9px;
+    text-align: center;
+    display: inline;
+}
+
+@media only screen and (max-width: 1100px) {
+    #Logo
+    {
+        height: 100px;
+    }
+
+    #logo-img
+    {
+        height: 100px;
+    }
+
+    #img-perfil{
+        display: none;
+    }
+
+    #Sesion
+    {
+        width: 20%;
+    }
+
+    .container
+    {
+        width: 100%;
+    }
+
+    #admin
+    {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #Logo
+    {
+        height: 100px;
+
+    }
+
+    #evaluados{
+        margin-top: 20px;
+        width: 100%;
+        border-left: none; 
+    }
+
+    #evaluador{
+        width: 100%;
+    }
+
+    #div-fijo{
+        position: relative;
+        width: 100%
+    }
+
+    #logo-img
+    {
+        height: 100px;
+    }
+
+    #img-perfil{
+        width: 80px;
+        display: none;
+    }
+
+    #Sesion
+    {
+        width: 20%;
+    }
+
+    .container, #contenedor
+    {
+        width: 100%;
+    }
+
+    #admin
+    {
+        margin-top: 10px;
+        width: 100%;
+    }
+}

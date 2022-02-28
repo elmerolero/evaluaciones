@@ -1,0 +1,106 @@
+body{
+	box-sizing: border-box;
+}
+
+header{
+	position: fixed;
+}
+
+#error{
+	width: 100%;
+	background: red;
+	text-align: center;
+	color: white;
+	position: fixed;
+	top: 150px;
+	z-index: 0;
+	display: none;
+}
+
+#contenedor{
+	margin: 150px;
+}
+
+.pregunta, .respuesta1, .respuesta2{
+	border-bottom: 1px black solid;
+}
+
+.aspecto{
+	font-weight: bold;
+	text-align: justify;
+	column-span: all;
+	padding: 0px 20px 10px 0px;
+}
+
+#evaluacion
+{
+	display: none;
+}
+
+.pregunta{
+	width: 60%;
+	padding: 10px 20px 10px 20px;
+}
+
+.preguntas{
+	width: 60%;
+	padding: 10px 20px 10px 20px;
+}
+
+.respuesta{
+	text-align: center;
+	margin: auto;
+	width: 9%;
+}
+
+.respuesta1, .respuesta2{
+	text-align: center;
+}
+
+.respuesta1{
+	background: rgb(83, 131, 209);
+}
+
+#Opinion{
+	width: 100%;
+	height: 100px;
+}
+
+#regresar{
+	margin-top: 10px;
+	width: 250px;
+	display: inline;
+	margin-right: 20px;
+	float: right;
+}
+
+.boton{
+	display: inline;
+	margin-top: 10px;
+	width: 250px;
+	float: right;
+	background: rgb(53, 91, 239);
+	color: white;
+}
+
+/* Datos del empleado evaluado */
+.datos, .opcion-relacion{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#codigo{
+	width: 80px;
+}
+
+#empleado{
+	width: 50%;
+}
+
+#anio{
+	width: 80px;
+}
+
+.opcion-relacion{
+	width: 31%;
+}

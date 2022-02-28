@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Evaluación 360</title>
+
+		 <!-- Bootstrap CSS -->
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link rel="stylesheet" href="/evaluaciones/evaluaciones/evaluaciones.css">
+        <link rel="stylesheet" href="/evaluaciones/evaluaciones/evaluacion360/evaluacion360.css">
+	</head>
+	<body>
+		<header>
+        <div class="container">
+            	<div class="row">
+                	<div class="col-2">
+                   		<div id="logo">
+                        	<img src="/evaluaciones/imagenes/logo.jpg" alt="Valcon" id="logo-img" width="80">
+                    	</div>
+                	</div>
+                	<div  id="titulo" class="centrado">
+                    	<h2 class='text-center'>Evaluacion 360 - 180<br><span style='font-size: 0.8em'>DISTRIBUIDORA VALCON S.A. DE C.V.</span></h2>
+                	</div>
+                	<div id="sesion" class="left-block">
+                    	<p id="nombreSesion">---------------</p>
+                    	<a href="/evaluaciones/Sesion/finalizar.php">Cerrar Sesión</a>
+                	</div>
+               		<img class="right-block" src="/evaluaciones/imagenes/Perfiles/Default/default.png" id="img-perfil" style="margin: 10px; border-radius: 10px"/>
+            	</div>
+        	</div>
+    	</header><br>
+        <p id="error">ESTE ES UN MENSAJE DE NOTIFICACIÓN</p>
+    	<div id="contenedor">
+            <div id="seleccion">
+                <h3 align="center">Selecciona un empleado</h3>
+                <div id="empleados">
+    	            <button class="form-control Empleado1" id="Empleado1">
+                        <img class="img-emp" src='/evaluaciones/imagenes/Perfiles/Default/default.png' width="120" height="135" style="margin: 12px 0px 8px 0px; border-radius: 5px"/>
+                        <p class="nom-emp" style="margin: 0px 3px 0px 3px">Empleado</p>
+    	            </button>
+                </div>
+            </div>
+            <form id='evaluacion' role='form' method='POST'>
+                <h3 align='center'>Información</h3>
+                <p class='datos'><strong>Código: </strong></p> <input type='text' class='form-control datos' maxlength="6" id='codigo'/>
+                <p class='datos'><strong>Nombre del empleado: </strong></p><input type='text' class='form-control datos' maxlength="100" id='empleado'/>
+                <p class='datos'><strong>Año: </strong></p><input type='text' class='form-control datos' maxlength="6" id='anio'/>
+                <br><br><p class='datos'><strong>Seleccionar su relación con el evaluado: </strong></p><br>
+                <div class='opcion-relacion'><input type='radio' name='relacion' value='Jefe'> Jefe</div>
+                <div class='opcion-relacion'><input type='radio' name='relacion' value='Cliente'> Cliente</div>
+                <div class='opcion-relacion'><input type='radio' name='relacion' value='Yo mismo'> Yo mismo</div>
+                <div class='opcion-relacion'><input type='radio' name='relacion' value='Compañero de area'> Compañero de Área</div>
+                <div class='opcion-relacion'><input type='radio' name='relacion' value='Proovedor'> Proveedor</div>
+                <div class='opcion-relacion'><input type='radio' name='relacion' value='Subordinado'> Subordinado</div>
+                <div class='opcion-relacion'><input type='radio' name='relacion' value='Otro'> Otro</div>
+                <br><br>
+                <table id="tabla">
+                    <tr>
+                        <td ><h3 align='center'>Instrucciones</h3></td>
+                        <td class="respuesta"></td>
+                        <td class="respuesta"></td>
+                        <td class="respuesta"></td>
+                        <td class="respuesta"></td>
+                    </tr>
+                    <tr>
+                        <td id="instrucciones"></td>
+                        <td class="respuesta"><img src="/evaluaciones/imagenes/botones/smile.png" width="50"></td>
+                        <td class="respuesta"><img src="/evaluaciones/imagenes/botones/happy.png" width="50"></td>
+                        <td class="respuesta"><img src="/evaluaciones/imagenes/botones/confused.png" width="50"></td>
+                        <td class="respuesta"><img src="/evaluaciones/imagenes/botones/awful.png" width="50"></td>
+                    </tr>
+                    <tr>
+                        <td class=""><h3 align='center'>Preguntas</h3></td>
+                        <td class="respuesta">Siempre</td>
+                        <td class="respuesta">Casi siempre</td>
+                        <td class="respuesta">A veces si, a veces no</td>
+                        <td class="respuesta">Nunca</td>
+                    </tr>
+                    <tr class="preguntas">
+                    </tr>
+                </table><br><label for='Opinion'>Opinion</label><br>
+                <textarea type='text' name="opinion" maxlength='400' id='Opinion' class='form-control'></textarea><br>
+                <button type="submit" class='form-control boton'>Enviar</button><button type="button" class='form-control' id="regresar">Regresar</button>
+                <br>
+            </form>
+            <br>
+            <a href="/evaluaciones/Inicio/Evaluar" align="center" id="volver">Volver</a>   
+        </div>
+    	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    	<!-- Optional JavaScript -->
+        <script src="src/evaluar.js" type="text/javascript"></script>
+        <script src="/evaluaciones/Inicio/sesion.js" type="text/javascript"></script>
+	</body>
+</html>

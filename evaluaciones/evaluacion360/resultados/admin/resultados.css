@@ -1,0 +1,194 @@
+*{
+	margin: 0;
+}
+
+#contenedor{
+	padding: 20px;
+	width: 80%;
+	background: rgb(255, 255, 255);
+	margin: auto;
+}
+
+.empleado-2{
+  width: 100%;
+  margin: 0px auto 10px auto;
+  border-radius: 5px;
+  padding: 10px;
+  background: white;
+  font-size: 1.1em;
+}
+
+.empleado-1
+{
+  width: 100%;
+  margin: 0px auto 10px auto;
+  border-radius: 5px;
+  padding: 10px;
+  background: rgb(186, 207, 239);
+  font-size: 1.1em;
+}
+
+.consultar{
+  float: right;
+  background: transparent;
+  border: none;
+  color: blue;
+}
+
+#datos-resultados{
+  background: white;
+  width: 80%;
+  border: black 1px solid;
+  padding-top: 10px; 
+  margin: 10px auto 5px auto;
+}
+
+#nombreEmpleado, #codigoEmpleado, #puestoEmpleado{
+    display: inline-block;
+    margin: 0px;
+    vertical-align: top;
+}
+
+#nombreEmpleado{
+    width: 60%;
+}
+
+#codigoEmpleado{
+    width: 30%;
+}
+
+#contenedorResultados{
+	width: 70%;
+	margin: auto;
+	display: flex;
+}
+
+#grafico{
+	background: rgb(186, 207, 239);
+	border-radius: 10px;
+	margin: auto;
+	width: 100%;
+}
+
+#graficoEvaluacion{
+	border-radius: 10px;
+	margin: auto;
+	width: 40%;
+	display: none;
+}
+
+#resultadoEvaluacion{
+	border-radius: 10px;
+	margin: auto;
+	width: 40%;
+	display: none;
+}
+
+#evaluacionAspectos{
+
+}
+
+#aspectos{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	border: black 1px solid;
+}
+
+/* Formato de datos del empleado */
+#datos-empleado{
+    align-items: center;
+    text-align: center;
+}
+
+#empleado-evaluado{
+    display: inline-block;
+    margin: 20px;
+    width: 380px;
+}
+
+#SelecAnio{
+  display: inline-block;
+  margin-left: 20px;
+  width: 100px;
+}
+
+.check-relacion{
+    width: 24%;
+    display: inline-block;
+}
+
+.numero{
+  width: 2%;
+}
+
+.preguntas{
+  width: 65%;
+  padding: 5px 0px 5px 0px; 
+  border-bottom: black 1px solid;
+}
+
+.resultadose{
+  width: 8%;
+  text-align: center;
+  vertical-align: middle;
+  border: black 1px solid;
+}
+
+.pautoevaluacion{
+    width: 8%;
+    text-align: center;
+    vertical-align: middle;
+    border: black 1px solid;
+}
+
+.pgeneral{
+    width: 8%;
+    text-align: center;
+    vertical-align: middle;
+    border: black 1px solid;
+}
+
+#R1, #R2, #R3, #R4, #R5, #R6, #R7{
+  margin: 10px;
+}
+
+#opiniones{
+  min-height: 100px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+	#img-perfil{
+        display: none;
+    }
+
+    #logo{
+      display: none;
+    }
+
+    #contenedor
+    {
+    	width: 100%;
+    }
+
+    #contenedorResultados
+    {
+    	width: 100%;
+    	display: block;
+    }
+
+    #graficoEvaluacion, #resultadoEvaluacion
+    {
+    	margin-bottom: 20px;
+    	width: 80%;
+    }
+
+    .secciones-laterales
+    {
+    	display: none;
+    }
+}

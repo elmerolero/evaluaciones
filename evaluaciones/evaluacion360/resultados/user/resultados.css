@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+}
+
+#contenedor{
+	padding: 20px;
+	width: 80%;
+	background: rgb(255, 255, 255);
+	margin: auto;
+}
+
+#contenedorResultados{
+	width: 70%;
+	margin: auto;
+	display: flex;
+}
+
+#grafico{
+	background: rgb(186, 207, 239);
+	border-radius: 10px;
+	margin: auto;
+	width: 100%;
+}
+
+#graficoEvaluacion{
+	border-radius: 10px;
+	margin: auto;
+	width: 40%;
+	display: none;
+}
+
+#resultadoEvaluacion{
+	border-radius: 10px;
+	margin: auto;
+	width: 40%;
+	display: none;
+}
+
+#loadImg{
+	width: 15%;
+	margin: auto;
+}
+
+#puntajeTotal{
+	vertical-align: center;
+}
+
+#opiniones{
+	border: 1px solid rgb(81, 150, 255);
+	padding: 10px;
+	border-radius: 5px;
+	height: 130px;
+	overflow-y: auto;
+}
+
+.opinion{
+	border-radius: 5px;
+	margin-bottom: 10px;
+	padding: 5px;
+	width: 70%;
+}
+
+.opinion1{
+	width: 70%;
+	background: rgb(186, 207, 239);
+}
+
+.opinion2{
+	text-align: left;
+	margin-left: auto;
+	padding: 5px;
+	background: rgb(250, 180, 75);
+}
+
+#evaluacionAspectos{
+
+}
+
+#aspectos{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	border: black 1px solid;
+}
+
+@media only screen and (max-width: 1000px) {
+	#img-perfil{
+        display: none;
+    }
+
+    #logo{
+      display: none;
+    }
+
+    #contenedor
+    {
+    	width: 100%;
+    }
+
+    #contenedorResultados
+    {
+    	width: 100%;
+    	display: block;
+    }
+
+    #graficoEvaluacion, #resultadoEvaluacion
+    {
+    	margin-bottom: 20px;
+    	width: 80%;
+    }
+
+    .secciones-laterales
+    {
+    	display: none;
+    }
+}

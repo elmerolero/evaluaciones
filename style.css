@@ -1,0 +1,93 @@
+/* General */
+body{
+	background: rgb(240, 240, 240);
+}
+
+/* Header */
+header{
+	background: white;
+	box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.50);
+} 
+
+footer{
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: .9em;
+  bottom: 0;
+  padding: 18px 0px 10px 0px;
+}
+
+#logo{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.registro{
+	padding-bottom: 3px;
+	color: blue;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.centrado{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.registro:hover
+{
+	background: blue;
+	color: white;
+}
+
+.contrasena{
+  text-align: center;
+}
+
+#contErronea{
+  display: none;
+  color: rgb(200, 0, 0);
+}
+#usrErroneo{
+  display: none;
+  color: rgb(200, 0, 0);
+}
+
+.cuerpo-formulario{
+  padding: 30px;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

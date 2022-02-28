@@ -1,0 +1,42 @@
+html, body{
+	height: 100%;
+}
+
+#error{
+	display: block;
+	margin: auto;
+	align-items: center;
+}
+
+#mensaje-error-usr, #enlace, #mensaje-error-cod, #mensaje-error-con{
+	color: red;
+	display: inline-block;
+}
+
+#enlace{
+	text-decoration: underline;
+}
+
+.wrapper{
+	min-height: 99%;
+	height: auto !important;
+	height: 99%;
+	margin: 0 auto -4em;
+}
+
+.push{
+	height: 4em;
+}
+
+#mensaje, #formulario-codigo, #formulario-restablecer, #restablecimiento-exitoso{
+	display: none;
+}
+
+#formulario-contrasena, #mensaje, #formulario-codigo, #formulario-usuario, #formulario-restablecer, #restablecimiento-exitoso{
+	padding: 20px;
+	width: 600px;
+	margin: auto;
+	border-radius: 10px;
+	background: white;
+}
+

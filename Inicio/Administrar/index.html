@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es-mx">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="admin.css">
+
+        <title>Distribuidora Valcon</title>
+    </head>
+    <body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div id="logo">
+                        <img src="/evaluaciones/imagenes/logo.jpg" alt="Valcon" id="logo-img" width="80">
+                    </div>
+                </div>
+                <div  id="titulo" class="centrado">
+                    <h2 class="text-center">Administración de Evaluaciones</h2>
+                </div>
+                <div id="sesion" class="right-block">
+                    <p id="nombreSesion">---------------</p>
+                    <a href="/evaluaciones/Sesion/finalizar.php">Cerrar Sesión</a>
+                </div>
+                <img class="right-block" src="/evaluaciones/imagenes/Perfiles/Default/default.png" id="img-perfil" style="margin: 10px; border-radius: 10px"/>
+            </div>
+        </div>
+    </header>
+    <div class="padre">
+        <div class="secciones-laterales">
+            <div class="menu">
+                <h3 class="text-center">Evaluaciones</h3>
+                <div class='opcion-menu'>
+                    <button class="boton" id="consulta-evaluaciones"><img src="/evaluaciones/imagenes/Botones/file.png" width="32"></button><p class="opcion-boton">Consultar Evaluaciones</p>
+                </div>
+            </div>
+        </div>
+        <!-- Seccion central --> 
+        <div id="seccion-central">
+            <div id="sec-evaluaciones">
+                <h2 class="text-center" style="color: rgb(50, 50, 200)">Evaluaciones Disponibles</h2><br>
+                <div id="elementos">
+                    <div class="row opcion-evaluacion-1" id="evaluacion-1">
+                        <img class="align-self-center mr-3" src="/evaluaciones/imagenes/Sesion/checklist2.png" width="80"> 
+                        <div id="item1" class="opc-contenido" class="media-body">
+                            <a class="mt-0 enlace-administracion">Habilitar</a>
+                            <p class="mb-0 nombre-evaluacion">Elemento</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div id="sec-empleados-agregar">
+                <h2 class="text-center" style="color: rgb(50, 50, 200)">Nuevo Empleado</h2><br>
+                <form enctype="multipart/form-data" role="form" method="POST" id="formAdd">
+                    <input type="text" id="apellidosUsr" name="apellidos" maxlength="50" class="form-control" placeholder="Apellidos"/>
+                    <input type="text" id="codigoUsr" name="codigo" maxlength="6" class="form-control" placeholder="Código empleado"/>
+                    <input type="text" id="nombreUsr"  name="nombre" maxlength="50" class="form-control" placeholder="Nombre"/>
+                    <select class="form-control" name="proceso" id="select-proceso">
+                        <option value="0">Seleccionar Área</option>
+                    </select>
+                    <div>
+                        <label id="tag" for="archivo">Foto de Empleado (opcional)</label><input type="file" id="foto_emp" name='foto_empleado' class="form-control"/>
+                    </div>
+                    <span id="checkbox"><input type="checkbox" name="admin" id="admin" value="0" onchange="establecerValorCheck('#admin')">Es administrador<br></span>
+                    <input class="btn btn-lg btn-secundary btn-block" id="borrar" value="Borrar" type="reset"/>
+                    <input class="btn btn-lg btn-primary btn-block" id="registrar" value="Registrar" type="button"/>
+                </form>
+                <p id="showError"></p>
+                <br>
+            </div>
+            <div id="editable">
+            </div>
+            <div id="sec-empleados-consultar">
+                <h2 class="text-center" style="color: rgb(50, 50, 200)">Empleados</h2>
+                <input type="text" id="buscarEmpleado" placeholder="Buscar por nombre o apellidos" class="form-control"/>
+                <br> <br>
+                <div id="empleados">
+                    <div id="empleado-1" class="empleado-1">
+                        <img src="/evaluaciones/imagenes/Perfiles/Default/default.png" class="fotoEmp" width="55" height="55" style="border-radius: 30px; float: left; margin-right: 10px">
+                        <p id="nombreEmpleado"><strong>Nombre: </strong><span class="nombreEmp">Nombre empleado.</span></p>
+                        <p id="codigoEmpleado"><strong>Código: </strong><span class="codEmp">XXXXXX</span></p>
+                        <p id="puestoEmpleado"><strong>Puesto: </strong><span class="areaEmp">Proceso</span></p>
+                        <button class="editar">Editar</button>
+                    </div>
+                </div>
+                <div id="pagEmpleados">
+                    <button class="botonp" id="pag1" onclick="crearListaEmpleados(1)">1</button>
+                </div>
+            </div> <br>
+            <div id="sec-empleados-edit">
+                <h2 class="text-center" style="color: rgb(50, 50, 200)">Editar Empleado</h2><br>
+                <p align="center"><strong>Modifica la información que sea incorrecta y da clic en "Guardar"</strong></p><br>
+                <img src="/evaluaciones/imagenes/Perfiles/Default/default.png" id="img_emp" width="20%" style="display: inline-block; vertical-align: top; margin: 0px 15px 15px 0px; border-radius: 15px">
+                <form id="formu" enctype="multipart/form-data">
+                    <div class="bloque-form">
+                        <label for="id_emp" style="margin-right: 10px">Código: </label><br><input id="id_emp" class="form-control" type="text" maxlength="6" name="codigoE" readonly/>
+                    </div>
+                    <div class="bloque-form">
+                        <label for="selec-proceso">Área: </label>
+                        <select class="form-control" name="procesoE" id="selec-proceso"></select>
+                    </div>
+                    <label for="nom_emp">Nombre:</label><input name='nombreE' id="nom_emp" class="form-control" type="text" maxlength="50">
+                    <label for="ape_emp">Apellidos:</label><input name='apellidosE' id="ape_emp" class="form-control" type="text" maxlength="50">
+                    <div class="bloque-form">
+                        <label for="foto_empE">Fotografía:</label><input name="foto_empE" id="foto_empE" class="form-control" type="file">
+                    </div>
+                    <div class="bloque-form">
+                        <label for="hab_emp">Actividad</label><br>
+                        <select type="checkbox" name="habilitarE" id="hab_emp" class="form-control" style="display:inline-block; height: 42px">
+                            <option value="1">Habilitado</option> 
+                            <option value="0">Desabilitado</option> 
+                        </select><br>
+                    </div>  
+                    <div>
+                        <span id="checkbox"><input type="checkbox" name="adminE" id="adminAct" value="0" onchange="establecerValorCheck('#adminAct')"> Es administrador<br></span>
+                    </div>  
+                    <input class="btn btn-lg btn-primary btn-block" id="editar_emp" value="Guardar" type="button"/>
+                    <input class="btn btn-lg  btn-block" id="eliminar_emp" value="Eliminar" type="button"/>
+                </form>
+            </div>
+            <a href="/evaluaciones/Inicio/">Volver al Inicio</a>
+        </div>
+        <div class="secciones-laterales">
+            <div class="menu">
+                <h3 class="text-center">Empleados</h3>
+                <div class='opcion-menu'>
+                    <button class="boton" id="agregar-empleados"><img src="/evaluaciones/imagenes/Botones/add.png" width="32"></button><p class="opcion-boton">Agregar Empleado</p>
+                </div>
+                <div class='opcion-menu'>
+                    <button class="boton" id="consultar-empleados"><img src="/evaluaciones/imagenes/Botones/search.png" width="30"></button><p class="opcion-boton">Consultar Empleado</p>
+                </div>
+            </div>
+            <div class="menu" style="margin-top: 10px">
+                <h3 class="text-center">Mantenimiento</h3>
+                <div class='opcion-menu'>
+                    <button class="boton" id="consultar-empleados"><img src="/evaluaciones/imagenes/Botones/notification.png" width="30"></button><p class="opcion-boton">Notificaciones</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <p class="col-10">Distribuidora Valcon <br> Programa de Evaluación de empleados</p>
+                <a href="http://www.valcon.com.mx" class="centrado col">www.valcon.com.mx</a>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script src="Empleados/empleados.js" type="text/javascript"></script>
+    <script src="Evaluaciones/evaluaciones.js" type="text/javascript"></script>
+    <script src="admin.js" type="text/javascript"></script>
+  </body>
+</html>

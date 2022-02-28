@@ -1,0 +1,40 @@
+#form-registro{
+	width: 500px;
+	height: 350px;
+	background: white;
+	margin: 25px auto 25px auto;
+}
+
+#titulo
+{
+  	width: 62%;
+}
+
+.form
+{
+	margin: auto;
+	width: 80%;
+}
+
+#paso-2{
+	display: none;
+}
+
+#paso-3{
+	display: none;
+}
+
+.boton_siguiente{
+	width: 100px;
+	color: white;
+	background: blue;
+	margin-right: 10%;
+	margin-left: auto;
+}
+
+#editable{
+  display: none;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}

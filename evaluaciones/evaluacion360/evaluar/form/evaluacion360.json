@@ -1,0 +1,182 @@
+{
+	"ID_Evaluacion": "1",
+	"Nombre_Evaluacion": "Evaluación Personal 360 - 180",
+	"Instrucciones": "Favor de responder a cada una de las preguntas y tachar la opción que haya observado en las actitudes y comportamientos de la persona a evaluar. Además al final existe un espacio libre para expresar opiniones, ideas o sugerencias.",
+	"Tipo": "1",
+	"Opciones": [{
+			"opcion": "Supera",
+			"valor": "10"
+		},
+		{
+			"opcion": "Siempre",
+			"valor": "8"
+		},
+		{
+			"opcion": "A veces sí, a veces no",
+			"valor": "6"
+		},
+		{
+			"opcion": "Nunca",
+			"valor": "0"
+		}
+	],
+	"Preguntas": [{
+			"aspecto": "Honradez: Rectitud en el cumplimiento de deberes, respetando los recursos ajenos.",
+			"pregunta": "¿Respeto el horario de trabajo desde el incio 8 AM hasta las 5:30 PM sin distraer a los demás o a él mismo?"
+			
+		},
+		{
+			"aspecto": "Honradez: Rectitud en el cumplimiento de deberes, respetando los recursos ajenos.",
+			"pregunta": "¿Dice la verdad a jefes, compañeros, personal y gente con quien se relaciona?"
+		},
+		{
+			"aspecto": "Honradez: Rectitud en el cumplimiento de deberes, respetando los recursos ajenos.",
+			"pregunta": "¿Respeta las cosas de las demás personas y de la empresa que no le pertenecen?"
+		},
+		{
+			"aspecto": "Honradez: Rectitud en el cumplimiento de deberes, respetando los recursos ajenos.",
+			"pregunta": "¿Dice la verdad aunque el trabajo o alguna maquinaria no hubiera salido bien?"
+		},
+		{
+			"aspecto": "Trabajo en equipo: Es la actitud de servicio entre dos o más personas buscando objetivos comunes para llegar a la meta establecida.",
+			"pregunta": "¿Cumple con las tareas que le asignan para sacar el trabajo del área y de otro departamento?"
+		},
+		{
+			"aspecto": "Trabajo en equipo: Es la actitud de servicio entre dos o más personas buscando objetivos comunes para llegar a la meta establecida.",
+			"pregunta": "¿Colabora y participa con los compañeros de trabajo?"
+		},
+		{
+			"aspecto": "Trabajo en equipo: Es la actitud de servicio entre dos o más personas buscando objetivos comunes para llegar a la meta establecida.",
+			"pregunta": "¿Ayuda a los demás sin que se lo pidan?"
+		},
+		{
+			"aspecto": "Trabajo en equipo: Es la actitud de servicio entre dos o más personas buscando objetivos comunes para llegar a la meta establecida.",
+			"pregunta": "¿Participa en las brigadas, comité de calidad, grupos que se necesitan en la empresa con optimismo?"
+		},
+		{
+			"aspecto": "Calidad: Es la mejora continua de procesos, productos y personas en cualquier actividad desempeñada.",
+			"pregunta": "¿Conoce la política de calidad y los objetivos de calidad?"
+		},
+		{
+			"aspecto": "Calidad: Es la mejora continua de procesos, productos y personas en cualquier actividad desempeñada.",
+			"pregunta": "¿Comprende la política y los objetivos de calidad?"
+		},
+		{
+			"aspecto": "Calidad: Es la mejora continua de procesos, productos y personas en cualquier actividad desempeñada.",
+			"pregunta": "¿Trabaja bajo política y en cumplimiento de objetivos?"
+		},
+		{
+			"aspecto": "Calidad: Es la mejora continua de procesos, productos y personas en cualquier actividad desempeñada.",
+			"pregunta": "¿Hace bien su trabajo desde un inicio y se preocupa por hacerlo bien?"
+		},
+		{
+			"aspecto": "Calidad: Es la mejora continua de procesos, productos y personas en cualquier actividad desempeñada.",
+			"pregunta": "¿Está abierto a la mejora contínua de cualquier tarea, proceso o cambio?"
+		},
+		{
+			"aspecto": "Calidad: Es la mejora continua de procesos, productos y personas en cualquier actividad desempeñada.",
+			"pregunta": "¿Tiene en y trata de cumplir con el ISO 9001 que le corresponde (reportes, procedimientos, instructivos, calidad, etc.)?"
+		},
+		{
+			"aspecto": "Calidad: Es la mejora continua de procesos, productos y personas en cualquier actividad desempeñada.",
+			"pregunta": "¿Cumple con el tiempo de entrega de su trabajo con su área, jefe,compañeros, cliente, etc?"
+		},
+		{
+			"aspecto": "Respeto: Es la tolerancia a las diferentes formas de ser y pensar de las personas, sin causar daño o perjuicio a otro.",
+			"pregunta": "¿Acepta a los demás por su raza, religión, preferencia sexual, creencias religiosas, deportiva, o electoral?"
+			
+		},
+		{
+			"aspecto": "Respeto: Es la tolerancia a las diferentes formas de ser y pensar de las personas, sin causar daño o perjuicio a otro.",
+			"pregunta": "¿Respeta a las personas por sus nombres?"
+			
+		},
+		{
+			"aspecto": "Respeto: Es la tolerancia a las diferentes formas de ser y pensar de las personas, sin causar daño o perjuicio a otro.",
+			"pregunta": "¿Se dirige correctamente a las personas (no uso de palabras altisonantes, apodos, etc.)?"
+			
+		},
+		{
+			"aspecto": "Respeto: Es la tolerancia a las diferentes formas de ser y pensar de las personas, sin causar daño o perjuicio a otro.",
+			"pregunta": "¿Promueve el compañerismo y reglas de convivencia?"
+			
+		},
+		{
+			"aspecto": "Responsabilidad: Es la cualidad que nos compromete a ser perseverante y constante con el trabajo, con la sociedad y con el medio ambiente.",
+			"pregunta": "¿Siempre cumple con el trabajo o tarea asignada?"
+			
+		},
+		{
+			"aspecto": "Responsabilidad: Es la cualidad que nos compromete a ser perseverante y constante con el trabajo, con la sociedad y con el medio ambiente.",
+			"pregunta": "¿Limpia su lugar de trabajo así como el área o departamento que le corresponde o le asignan?"
+			
+		},
+		{
+			"aspecto": "Responsabilidad: Es la cualidad que nos compromete a ser perseverante y constante con el trabajo, con la sociedad y con el medio ambiente.",
+			"pregunta": "¿Acepta cuando no hace bien su trabajo y se compromete a hacerlo bien?"
+			
+		},
+		{
+			"aspecto": "Responsabilidad: Es la cualidad que nos compromete a ser perseverante y constante con el trabajo, con la sociedad y con el medio ambiente.",
+			"pregunta": "¿Cumple con los objetivos establecidos por su jefe inmediato?"
+			
+		},
+		{
+			"aspecto": "5´S: Clasificar, Simplificar, Limpiar, Estandarizar y Auto-disciplina",
+			"pregunta": "¿Limpia su lugar de trabajo y departamento todos los días sin necesidad de que se lo pidan?"
+			
+		},
+		{
+			"aspecto": "5´S: Clasificar, Simplificar, Limpiar, Estandarizar y Auto-disciplina",
+			"pregunta": "¿Deposita la basura o deshecho en los recipientes contenedores para cumplir con la ecología?"
+			
+		},
+		{
+			"aspecto": "5´S: Clasificar, Simplificar, Limpiar, Estandarizar y Auto-disciplina",
+			"pregunta": "¿Mantiene las cosas en el lugar asignado y marcado en el área cuando ya no lo necesita?"
+			
+		},
+		{
+			"aspecto": "5´S: Clasificar, Simplificar, Limpiar, Estandarizar y Auto-disciplina",
+			"pregunta": "¿Reporta cuando no sirven las herramientas, maquinaria o equipo a su jefe o al encargado de mantenimiento?"
+			
+		},
+		{
+			"aspecto": "5´S: Clasificar, Simplificar, Limpiar, Estandarizar y Auto-disciplina",
+			"pregunta": "¿Respeta los pasillos en todo momento y no deja nada tirado o cosas estorbando a otras personas?"
+			
+		},
+		{
+			"aspecto": "Seguridad: Evitar accidentes y enfermedades en el trabajo.",
+			"pregunta": "¿Siempre utiliza el Equipo de Protección Personal?"
+			
+		},
+		{
+			"aspecto": "Seguridad: Evitar accidentes y enfermedades en el trabajo.",
+			"pregunta": "Cuando realiza su trabajo, ¿toma medidas de seguridad para evitar accidentes con el y con los compañeros?"
+			
+		},
+		{
+			"aspecto": "Seguridad: Evitar accidentes y enfermedades en el trabajo.",
+			"pregunta": "¿Trata de mantener limpios los baños, vestidores y comedor y respeta esa limpieza para los demás?"
+			
+		},
+		{
+			"aspecto": "Liderazgo: Solo aplicable a jefes, supervisores o gerentes.",
+			"pregunta": "¿La comunicación es efectiva con la gente que me relaciono?"
+		},
+		{
+			"aspecto": "Liderazgo: Solo aplicable a jefes, supervisores o gerentes.",
+			"pregunta": "¿Asume la responsabilidad y obligaciones de rendir cuentas con referente a la eficacia del sistema de gestión de calidad?"
+		},
+		{
+			"aspecto": "Liderazgo: Solo aplicable a jefes, supervisores o gerentes.",
+			"pregunta": "¿Garantiza los recursos necesarios para realizar sus procesos?"
+		},
+		{
+			"aspecto": "Liderazgo: Solo aplicable a jefes, supervisores o gerentes.",
+			"pregunta": "¿Promueve la mejora?"
+		}
+	],
+	"Sugerencias": ""
+}

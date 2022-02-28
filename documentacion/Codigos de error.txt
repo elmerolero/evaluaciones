@@ -1,0 +1,44 @@
+Codigos de error en autenticacion:
+Código 0	->	Autenticación correcta
+Código 1	->	Campo usuario vacío
+Código 2	->	Campo contraseña vacío
+Código 3	->	Usuario no encontrado
+Código 4 	->	Contraseña incorrecta
+
+Codigos de error en registros de empleado
+Código 0 	->	Registro realizado
+Código 1	->	Campo nombre vacío
+Código 2	->	Campo codigo vacío
+Código 3	->	Campo apellidos vacío
+Código 4	->	Campo de selección vacío
+Còdigo 5	-> 	ID proporcionado ya existe
+
+Códigos de advertencia en registros de empleado
+Código 11	->  Formato de foto incorrecto
+Código 12	->  Formato de foto incorrecto
+
+/* ------------------------------------------ */
+Codigos de error en actualización de empleado
+Descripción del formato de código:
+La cifra de la derecha representa el código de motivo, mientras que la cifra de la izquierda representa sobre qué es lo que estamos intentando registrar.
+Ejemplo: 
+	11 -> El número 1 de la izquierda hace referencia al registro del código de empleado, y el uno de la derecha es el código de error e indica que el código por el que quería cambiarse el usuario está repetido.
+
+Posibles códigos de la izquierda
+1 -> Hace referencia al código de usuario que se quiere cambiar
+
+Errores
+Código 11	->	El código de empleado a corregir está repetido.
+
+/* ------------------------------------------- */
+
+Tipos de Evaluacion
+Tipo 1 	->	Evaluación de valores: De acuerdo a la respuesta dada obtendrá cierto puntaje. El puntaje es el promedio arrojado de las preguntas.
+
+/* Campos de la base de datos de empleados */
+Base de datos
+ID_Empleado
+ID_Proceso
+Nombre
+Contrasena
+Administrador

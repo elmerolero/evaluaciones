@@ -1,0 +1,52 @@
+@media print{
+	header{
+		height: 95px;
+		margin: 0;
+	}
+
+	#datos-empleado{
+		height: 65px;
+	}
+
+	#Resultados{
+		font-size: 14px;
+	}
+
+	.preguntas{
+		padding: 1px 0px 1px 0px;
+	}
+
+	#Regresar{
+		display: none;
+	}
+
+	#contenedor{
+		width: 100%;
+		padding: 0;
+	}
+
+	#R1, #R2, #R3, #R4, #R5, #R6, #R7{
+  		margin: 0px 10px 0px 10px;
+	}
+
+	#datos-resultados-h{
+		display: inline-block;
+	}
+	#Sesion{
+		display: none;
+	}
+	#img-perfil{
+		display: none;
+	}
+}
+
+.numero{
+	border-right: 1px black solid;
+}
+
+#margen{
+	vertical-align: middle;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto; 
+}
